@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#head{
+    display: flex;
+    background-color: #3A4D8F;
+    text-align: center;
+    justify-content: center;
+    color: azure;
+    font-weight:900;
+    font-size: 30px;
+}
+
+#form{
+    display: inline-block;
+    padding: 10px;
+    background-color: #4a5a96;
+    align-items:center;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 300px;
+}
+
+
+#form-popup{
+    color: #bbd6fa;
+    font-size: 30px;
+    position:fixed;
+    top: 50vh;
+    left: 50vw;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in-out;
+}
+
+#form-popup label {
+    display: block;
+}
+
+input {
+    width: 90%;
+    height: 10%;
+    align-self: center;
+}
+
+#form-popup button {
+    padding: 15px;
+}
+
+#form-popup button{
+    margin: 40px;
+    padding: 10px;
+
+}
+#movies {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "a";
+    gap: 10px;
+    grid-auto-rows: 100px;
+    
+  }
+  
+#movies > div {
+    background-color: #e7e8e9;
+    margin: 10px;
+  }
+
+#movies > div>p {
+    display: inline-block;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#form-popup.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .overlay.active{
+      display: block;
+  }
+
+#new-movie-button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #095776;
+    top: 4%;
+    left: 90%;
+}
+
+#new-movie-button:after{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #095776;
+    top: 50%;
+    left: 50%;
+
+}
+
+#new-movie-button:before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 50%;
+    background: #095776;
+    top: 50%;
+    left: 50%;
+
+}
+
+
+#new-movie-button:hover:before,
+#new-movie-button:hover:after {
+    background: #fff;
+    transition: 0.2s;
+
+}
+
+#new-movie-button:hover{
+    background-color: #095776;
+    transition: 0.2s;
+}
+
+.remove-button {
+
+}
