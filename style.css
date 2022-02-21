@@ -1,6 +1,25 @@
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: var(--spacing-sm);
+}
+
 body{
     margin: 0;
     margin: 0;
+    margin-bottom: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -75,7 +94,6 @@ input {
     text-align: center;
 }
 
-
 #form-popup.active{
     transform: translate(-50%, -50%) scale(1);
 }
@@ -90,7 +108,7 @@ input {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .overlay.active{
+.overlay.active{
       display: block;
   }
 
@@ -127,7 +145,6 @@ input {
     left: 50%;
 }
 
-
 #new-movie-button:hover:before,
 #new-movie-button:hover:after {
     background: #fff;
@@ -138,4 +155,3 @@ input {
     background-color: #095776;
     transition: 0.2s;
 }
-
