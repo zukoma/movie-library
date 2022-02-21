@@ -54,7 +54,6 @@ input {
 #form-popup button{
     margin: 40px;
     padding: 10px;
-
 }
 #movies {
     width: 100%;
@@ -62,7 +61,6 @@ input {
     grid-template-areas: "a";
     gap: 10px;
     grid-auto-rows: 100px;
-    
   }
   
 #movies > div {
@@ -116,7 +114,6 @@ input {
     background: #095776;
     top: 50%;
     left: 50%;
-
 }
 
 #new-movie-button:before{
@@ -128,7 +125,6 @@ input {
     background: #095776;
     top: 50%;
     left: 50%;
-
 }
 
 
@@ -136,7 +132,6 @@ input {
 #new-movie-button:hover:after {
     background: #fff;
     transition: 0.2s;
-
 }
 
 #new-movie-button:hover{
@@ -144,6 +139,3 @@ input {
     transition: 0.2s;
 }
 
-.remove-button {
-
-}
